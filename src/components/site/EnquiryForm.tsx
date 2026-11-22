@@ -61,14 +61,20 @@ export function EnquiryForm({ defaultType = "business", defaultCourse }: Props) 
   const onEmail = (e: FormEvent) => {
     e.preventDefault();
     const err = validate();
-    if (err) return toast.error(err);
+    if (err) {
+      toast.error(err);
+      return;
+    }
     window.location.href = buildMailto(`${title} — ${val("company") || val("name")}`, formatEnquiry(title, fields()));
     toast.success("Opening your email app with the enquiry ready to send.");
   };
 
   const onWhatsApp = () => {
     const err = validate();
-    if (err) return toast.error(err);
+    if (err) {
+      toast.error(err);
+      return;
+    }
     window.open(buildWhatsApp(formatEnquiry(title, fields())), "_blank", "noopener");
   };
 
