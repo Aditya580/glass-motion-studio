@@ -11,8 +11,8 @@
 /* RK Associate design system: frosted glass on a cobalt aurora, amber accents. */
 
 @theme inline {
-  --font-display: "Playfair Display", Georgia, serif;
-  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -147,8 +147,7 @@
   }
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.01em;
-    font-weight: 600;
+    letter-spacing: -0.02em;
   }
 }
 
