@@ -11,8 +11,8 @@
 /* RK Associate design system: frosted glass on a cobalt aurora, amber accents. */
 
 @theme inline {
-  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -147,7 +147,8 @@
   }
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
+    font-weight: 600;
   }
 }
 
@@ -175,7 +176,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: gradient-pan 8s ease-in-out infinite;
+  
 }
 @utility bg-gradient-primary {
   background: var(--gradient-primary);
@@ -224,7 +225,7 @@
   position: absolute;
   border-radius: 9999px;
   filter: blur(80px);
-  opacity: 0.55;
+  opacity: 0.3;
   animation: blob 18s ease-in-out infinite;
 }
 .aurora span:nth-child(1) { width: 42vw; height: 42vw; left: -10vw; top: -8vw; background: oklch(0.72 0.14 245); }
