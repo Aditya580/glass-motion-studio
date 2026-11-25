@@ -17,7 +17,7 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50">
+    <header className="sticky top-0 z-50 ">
       <div className="hidden bg-navy text-navy-foreground md:block">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-xs">
           <span className="flex items-center gap-2 text-navy-muted">
@@ -49,7 +49,7 @@ export function SiteHeader() {
                 <Link
                   to={n.to}
                   activeOptions={{ exact: n.to === "/" }}
-                  className="rounded-full px-3.5 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                  className="rounded-full px-2 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                   activeProps={{ className: "bg-gradient-primary text-primary-foreground! shadow-glow" }}
                 >
                   {n.label}
